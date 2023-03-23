@@ -1,70 +1,76 @@
-:root{
-  --background: rgb(235,135,112);
-  --color: white;
+:root {
+  --background: #eb8770;
+  --color: #ffffff;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
-  font-family: 'poppins',sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
-header{
-   background: url(../img/header.jpg);
-   object-fit: fill;
-  background-size:cover;
+header {
+  background: url(../img/header.jpg);
+  background-position: center;
+  object-fit: fill;
+  background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 90vh;
+  min-height: 100vh;
 }
-.logo{
-margin: 20px 0px;
-}
-.top{
-  display: flex;
 
-margin: 0rem 10rem;
-
+.logo {
+  margin: 20px 0px;
 }
-.navigator{
+
+.top {
   display: flex;
   flex-wrap: wrap;
-  flex-flow: nowrap column;
 
+  margin: 0rem 10rem;
 
 }
-.link{
+
+.navigator {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
   display: flex;
   align-items: center;
-  
+
 }
-li{
+
+li {
   list-style: none;
   margin: 0;
   padding: none;
-  margin-top:1rem;
+  margin-top: 1rem;
 
 
 }
-li>a{
+
+li>a {
   text-decoration: none;
-  margin-left:3rem;
+  margin-left: 3rem;
   text-align: center;
 
 }
 
-.Content{
-  margin: 4rem 10rem;
-  color: RGB(50,90,123);
+.Content {
+  margin: 4rem 5rem;
+  color: RGB(50, 90, 123);
 
 }
 
-.Content>h1{
+.Content>h1 {
   font-size: 3rem;
-  color: RGB(50,90,123);
+  color: RGB(50, 90, 123);
 
 }
 
-.btn{
+.btn {
   height: 3rem;
   width: 8rem;
   padding: 12px 4px;
@@ -79,17 +85,20 @@ li>a{
   text-transform: bold;
   box-shadow: 0px 4px 21px var(--background);
 }
-.btn:hover{
+
+.btn:hover {
   box-shadow: none;
   border-radius: 8px;
 
 }
-.links{
+
+.links {
   display: flex;
   align-items: center;
   margin-top: 3rem;
 }
-.play{
+
+.play {
   margin-left: 3rem;
   background: var(--background);
   color: var(--color);
@@ -102,14 +111,16 @@ li>a{
   justify-items: center;
   justify-content: center;
   border-radius: 50%;
-  }
-  .play:hover{
-    box-shadow: none;
+}
+
+.play:hover {
+  box-shadow: none;
   border-radius: 4%;
-    
-  
-  }
-.links > span{
+
+
+}
+
+.links>span {
   margin-left: 3rem;
 
 
@@ -117,80 +128,57 @@ li>a{
 }
 
 
-.about{
+.about {
   width: 100%;
-  height: 100vh;
+  min-height: 50vh;
   background: var(--color);
-
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
 }
-.BestComfort{
-  width: 100%;
-  height: 100vh;
-  background: url(/img/pexels-nerfee-mirandilla-3186654.jpg);
-  object-fit: fill;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content:center;
-  flex-direction: row;
-flex-wrap: wrap;
-  align-items: center;
- 
-}
-.note{
+
+
+.note {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
-
-  text-align:center;
-  width: 150vh;
-  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  padding: 60px 0;
+  border-radius: 9px;
   background: var(--color);
   box-shadow: 0px 0px 52px rgb(255, 255, 255),
-              0px 0px 91px rgb(24, 24, 25) ,
-              0px 0px 112px rgb(255, 255, 255) ,
-              0px 0px 115px rgb(255, 255, 255) ;
+              2px 5px 15px rgb(29, 28, 28);
 
 }
-.note>h2{
+
+.note>h2 {
   display: flex;
   flex-direction: column;
-  text-align:center;
+  text-align: center;
 
   font-size: 50px;
 
   color: var(--background);
 }
-.note>span{
+
+.note>span {
   display: flex;
   flex-direction: column;
-  text-align:center;
+  text-align: center;
   font-size: 20px;
   background: var(--color);
 }
-.Best{
-  margin-left: 12vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  padding: 20px; 
-  width: 100vh;
-  height: 50vh;
-  background: rgba(253, 253, 253, 0.5);
 
 
-}
 
-.btn2{
-  height: 3rem;
-  width: 18rem;
-  padding: 12px 4px;
+.btn2 {
+  width: 30%;
+  padding: 20px 4px;
+  margin: 20px 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -203,453 +191,261 @@ flex-wrap: wrap;
   box-shadow: 0px 4px 21px var(--background);
   margin-left: 10rem;
 }
-.BestComfort > img{
- 
-  width: 60vh;
-  height: 80vh;
+.BestComfort {
+  width: 100%;
+  background: url(../img/pexels-nerfee-mirandilla-3186654.jpg);
+  object-fit: fill;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 0;
+
+}
+
+
+.BestComfort>img {
+
+  width: 30%;
+  height: 100%;
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
   box-shadow: 0px 10px 52px rgb(255, 255, 255),
-              0px 0px 115px rgb(255, 255, 255) ;
+  0px 0px 115px rgb(255, 255, 255);
 }
 
-.Stock{
-   
-  width: 100%;
-  height: 120vh;
+.Best {
   display: flex;
-justify-content: center;
-align-items: center;
-  background: linear-gradient(to bottom ,red 50%,white 50%);
-}
-
-.Buy{
-  width: 60vh;
-  height: 90vh;
-text-align: center;
-border-left: 1px solid skyblue;
-/* padding-top: 50px; */
-font-size: 15px;
-padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 15px 0;
+ 
+  background: rgba(253, 253, 253, 0.5);
 
 
 }
-.Buy > p{
-  padding-top: 15px;
-}
-.Tobuy {
-   margin-top: 40px;
-  border: 1px solid var(--background);
-  color: var(--background);
-  border-radius:30px;
-  height: 30px;
-  width: 100px;
-  text-decoration: none;
-  padding-left: 22px;
-  padding-right: 22px;
-  font-size: 16px;
-  /* position: absolute; */
-}
-.Tobuy:hover{
-  background: skyblue;
 
+.Stock {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, tomato 50%, white 50%);
 }
-#Tobuy{
-  background: var(--background);
-  color: var(--color);
 
 
-}
-.miniStock{
+
+
+.miniStock {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   background: var(--color);
   color: var(--background);
   width: 80%;
-  height: 98vh;
-  box-shadow: 0px 10px 52px rgb(17, 12, 12),
-  0px 0px 115px rgb(5, 3, 3) ;
+  box-shadow: 0px 0px 52px #110c0c,
+              0px 0px 10px #050303;
   border-radius: 10px;
-}
-.line{
-  margin-top: 26px;
-  margin-left: 40px;
-  width: 80%;
-  border-top: 0.1px solid skyblue;
-}
-h3{
-  color:rgba(31, 31, 31, 0.918);
-}
-
-.Menu{
-  display: flex;
-  width: 100%;
-  height: 124vh;
-  justify-content: center;
-  justify-content: space-around;
 
 }
-ul{
-  margin-left: 19px;
-}
 
-
-/*                   Responsive              content                   */
-
-
-
-
-
-@media only screen and (max-width:900px){
-
-  
-  header{
-    width: 100%;
-    height: 58vh;
-  }
-  .logo{
-  margin: 0px 0px;
-  }
-  .top{
-    display: flex;
-  
-  /* margin: 0rem 10rem; */
-  
-  }
-  .navigator{
-    display: flex;
-    flex-direction: row;
-  
-  
-  }
-  .link{
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-
-    
-  }
-  li{
-    list-style: none;
-    margin: 0;
-    padding: none;
-    margin-top:1rem;
-  
-  
-  }
-  .note{
-    display: flex;
-    align-items: center;
-    justify-content:center;  
-    text-align:center;
-    width: 100%;
-    height: 50vh;
-
-  
-  }
-  .note>h2{
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-  
-    font-size: 50px;
-  
-    color: var(--background);
-  }
-  .note>span{
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    font-size: 20px;
-    background: var(--color);
-  }
- 
-  .about{
-    display: flex;
-    justify-content: center;
-    width: 100% !important;
-    height: 100vh;
- 
-  
-  }
-  .BestComfort{
-    width: 100%;
-    height: 100vh;
-    background: url(/img/pexels-nerfee-mirandilla-3186654.jpg);
-    object-fit: fill;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-   
-  }
-
-  .Best{
-
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding: 10px; 
-    width: 50vh;
-    height: 30vh;
-    background: rgba(253, 253, 253, 0.5);
-  
-  
-  }
-  
-  .btn2{
-    height: 3rem;
-    width: 99%;
-    padding: 12px 4px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    margin-left: 0rem;
-  }
-  .BestComfort > img{
-   content:'none';
-    width: 60vh;
-    height: 50vh;
-    border-top-left-radius: 45px;
-    border-bottom-right-radius: 45px;
-    box-shadow: 0px 10px 52px rgb(255, 255, 255),
-                0px 0px 115px rgb(255, 255, 255) ;
-  }
-  
-  .Stock{
-     
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to bottom ,red 50%,white 50%);
-  }
-  
-  .Buy{
-    width: 60vh;
-    height: 50vh;
-  text-align: center;
-  border-left: 1px solid skyblue;
-  /* padding-top: 50px; */
-  font-size: 15px;
-  padding: 20px;
-  
-  
-  }
-  .Buy > p{
-    padding-top: 15px;
-  }
-  .Tobuy {
-     margin-top: 40px;
-    border: 1px solid var(--background);
-    color: var(--background);
-    border-radius:30px;
-    height: 30px;
-    width: 100px;
-    text-decoration: none;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-size: 16px;
-    /* position: absolute; */
-  }
-  .Tobuy:hover{
-    background: skyblue;
-  
-  }
-  #Tobuy{
-    background: var(--background);
-    color: var(--color);
-  
-  
-  }
-  .miniStock{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 58vh;
- 
-    border-radius: 10px;
-  }
-  .line{
-    margin-top: 26px;
-    margin-left: 40px;
-    width: 80%;
-    border-top: 0.1px solid skyblue;
-  }
-  h3{
-    color:rgba(31, 31, 31, 0.918);
-  }
-  
-  .Menu{
-    display: flex;
-    width: 100%;
-    height: 124vh;
-    justify-content: center;
-    justify-content: space-around;
-  
-  }
-}
-.body{
+.Buy{
   position: relative;
-  background-image: url(../img/pexels-rodnae-productions-5738085.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  padding: 0;
-  margin: 0;
-
-
-}
-ul > li > i {
-  color:yellow;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/*                            Card   styling                      */
-
-
-
-
-
-
-
-.card{
-  width: 77vh;
-  height: 87vh;
-  margin-top: 90px;
-  
-
-  box-shadow: 0px 0px 23px rgb(233, 233, 233),0px 0px 23px rgb(236, 236, 236),0px 0px 23px rgb(255, 255, 255),0px 0px 23px rgb(247, 247, 247);
-}
-button{
-  width: 100%;
-  height: 8.8vh;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: rgb(235,135,112);
-  color: white;
-
-}
-.chine{
-  font-size: 39px;
-  margin: 0;
-  padding-left: 10px;
-  list-style: none;
+  margin: 0px 10px;
   display: flex;
-
-
-}
-.fa-heart{
-  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 
 }
-.fasspan{
-  border-radius: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
-  background: rgb(29, 180, 180);
-  position: relative;
-  left: 30px;
-  top: -30px;
-  width: 10vh;
-  height: 10vh;
-  box-shadow: 0px 0px 90px  rgb(163, 255, 247),0px 0px 90px  rgb(163, 255, 247),0px 0px 90px  rgb(163, 255, 247),0px 0px 90px  rgb(163, 255, 247);
+.Buy img{
+  width: 100px;
+}
+.Buy  h3 {
+  color: rgba(31, 31, 31, 0.918);
+}
+.Buy p{
+  padding: 20px 0;
+}
+.Buy span:after{
+  content: '';
+  width: 9em;
+  height: .1em;
+  border-radius: 9px;
+  position: absolute;
+  background: #2e2e2e;
+  left: 0;
+  margin-left: 30px;
+} 
+.miniStock .Buy h2{
+  padding: 5px 0;
+}
+.Tobuy{
+  text-decoration: none;
+  background: var(--background);
+  color: var(--color);
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+.Tobuy:hover{
+  background: var(--color);
+  color: var(--background);
+  border: 1px solid var(--background);
+}
+.Buy pre:after{
+  content: '';
+  width: 13em;
+  height: .1em;
+  border-radius: 9px;
+  position: absolute;
+  background: #2e2e2e;
+  left: 0;
+  margin-left: 30px;
+} 
 
-}
-li{
-  padding: 12px;
 
+
+.Buy:nth-child(2){
+  padding: 0px 30px;
+  border-right-style: groove;
+ border-left-style: groove;
+ border-top-style: hidden;
+ border-bottom-style: hidden;
 }
-.star{
-  margin-left: 20px;
+.Buy:nth-child(3){
+padding: 0px 30px;
 }
-.lorem{
-  font-size: 20px;
+.Buy:nth-child(1){
+padding: 0px 30px;
 }
+
 .flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease-in-out;
+  flex-wrap: wrap;
+}
+
+
+.flex .card{
+  width: 420px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 11px rgb(138, 135, 135);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px 0;
+
+}
+.flex .card img{
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.flex .card .card_second{
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.flex .card .card_second span{
+  font-size: 1.4rem;
+}
+.flex .card .card_stars{
+  display: flex;
+  color: yellow;
+  font-size: 1.8rem;
+  padding: 3px 13px;
+}
+.flex .card .two_items{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.flex .card .two_items span{
   display: flex;
   justify-content: space-evenly;
-}
-ul{
-  margin-top: -22px;
-}
-@media only screen and (max-width:900px) {
-     .card{
-  display: flex;
- flex-direction: column;
-
-margin-top: 100px;
-font-size: 20px;}
-
-.chine{
-  display: flex;
- flex-direction: column;
- font-size: 20px;
-
+  padding: 15px 5px;
+  text-transform: italic;
 }
 
-.fasspan{
-
-  display: flex;
- flex-direction: column;
- font-size: 20px;
- position: relative;
- margin-left: 32rem;
- margin-top: -3rem;
-
+.flex .card .card_second i{
+  position: absolute;
+  margin-right: 20px;
+  margin-right: 20px;
+  font-size: 2rem;
+  color: white;
+  top: -20px;
+  border-radius: 100%;
+  background: #1db4b4;
+  padding:  15px;
+  right: 0;
+  box-shadow: 0px 0px 90px rgb(11, 255, 235), 
+              0px 0px 50px rgb(1, 255, 234);
 }
-
-.flex{
-  display: flex;
- flex-direction: column;
- font-size: 20px;
-}
-ul{
-  display: relative;
-
- margin-top: 0rem;
-}
-
-}
-
-
-
-footer{
-  height: auto;
-  width: 100%;
-  display:flex;
-  justify-content: center;
-  text-align:center;
-
-  align-items: center;
+.flex .card button{
   background: var(--background);
+  color: var(--color);
+  padding: 20px;
+  border: none;
+  transition: .5s;
 }
-.made > img{
-  height: 10vh;
-  width: 10vh;
-  animation: NImate 10s linear infinite;
+.flex .card button:hover{
+  background:var(--color)  ;
+  color: var(--background);
 }
-@keyframes NImate{
-  0%{
-    filter: blur(89px);
+
+body footer {
+  background: #050303;
+  color: #cecece;
+  padding: 20px 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Responsive content*/
+
+@media (max-width: 900px) {
+  header {
+    min-height: 60vh;
   }
-  10%{
-    filter: blur(10px);
+
+  .logo {
+    padding: 0px 10px;
   }
-  10%{
-    filter: blur(30px);
+
+  .top {
+    display: flex;
+    margin: 0rem 0rem;
+
   }
-  100%{
-    filter: blur(0px);
+
+  .top .link {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
+
+  .top .Content {
+    margin: 0;
+  }
+.miniStock .Buy pre:after,
+.miniStock .Buy span:after{
+width: 8em;
+}
+.miniStock{
+  justify-content: space-between;
+
+}
+.miniStock .Buy pre,
+.miniStock .Buy span{
+  position: block;
+width: 8em;
+}
+
 }
